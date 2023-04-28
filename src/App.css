@@ -1,0 +1,55 @@
+body{
+  margin:0px;
+  padding:0px;
+  background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
+}
+.App{
+  background-color: #F5F5F5;
+  position: absolute;
+  width: 1000px;
+  height: 550px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allDice{
+  display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    margin: 20px;
+    gap: 10px;
+}
+.die{
+ 
+  height: 75px;
+  width: 75px;
+  border-radius: 8px;
+  margin: 15px;
+  padding-top: 10px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rollButton{
+  height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+}
+.rollButton:focus {
+  outline: none;
+}
+
+.rollButton:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
